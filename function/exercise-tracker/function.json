@@ -12,6 +12,14 @@
       ]
     },
     {
+      "name": "message",
+      "type": "table",
+      "tableName": "messages",
+      "partitionKey": "message",
+      "connection": "AzureWebJobsStorage",
+      "direction": "out"
+    },
+    {
       "type": "http",
       "direction": "out",
       "name": "$return"
